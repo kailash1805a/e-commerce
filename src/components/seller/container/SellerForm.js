@@ -26,22 +26,22 @@ const SellerForm = () => {
                         >
                             <div className="col-md-12 col-sm-12">
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="firstname">First Name*	</label>
+                                    <label htmlFor="firstname">First Name*	</label>
                                     <input type="text" className="form-control input-sm" name="firstname" id="firstname" placeholder="First name..." />
                                 </div>
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="lastname">Last Name*</label>
+                                    <label htmlFor="lastname">Last Name*</label>
                                     <input type="text" className="form-control input-sm" name="lastname" id="lastname" placeholder="Last name..." />
                                 </div>
 
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="companyname">Company Name*</label>
+                                    <label htmlFor="companyname">Company Name*</label>
                                     <input type="text" className="form-control input-sm" name="companyname" id="companyname" placeholder="Company name..." />
                                 </div>
 
                                 <div className="form-group col-md-6 col-sm-5">
-                                    <label for="gender">Gender</label>
-                                    <div class="radio">
+                                    <label htmlFor="gender">Gender</label>
+                                    <div className="radio">
                                         <label>
                                             <input type="radio" name="gender" id="gender" value="option3" className="radio-custom" />Male
                                             <input type="radio" name="gender" id="gender" value="option3" className="radio-custom" />Female
@@ -50,17 +50,17 @@ const SellerForm = () => {
 
                                 </div>
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="landline">Landline No.</label>
+                                    <label htmlFor="landline">Landline No.</label>
                                     <input type="text" className="form-control input-sm" name="landline" id="landline" placeholder="Landline number..." />
                                 </div>
 
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="mobileno">Mobile No.</label>
+                                    <label htmlFor="mobileno">Mobile No.</label>
                                     <input type="text" className="form-control input-sm" name="mobileno" id="mobileno" placeholder="Mobile number..." />
                                 </div>
 
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="ccnumber">CC Number</label>
+                                    <label htmlFor="ccnumber">CC Number</label>
                                     <input type="text" className="form-control input-sm" name="ccnumber" id="ccnumber" placeholder="Credit card number..." />
                                 </div>
                             </div>
@@ -74,47 +74,47 @@ const SellerForm = () => {
                         >
                             <div className="col-md-12 col-sm-12">
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="addressline1">Address Line 1*	</label>
+                                    <label htmlFor="addressline1">Address Line 1*	</label>
                                     <input type="text" className="form-control input-sm" name="addressline2" id="addressline1" placeholder="Address line..." />
                                 </div>
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="addressline2">Address Line 2</label>
+                                    <label htmlFor="addressline2">Address Line 2</label>
                                     <input type="text" className="form-control input-sm" name="addressline2" id="addressline2" placeholder="Address line..." />
                                 </div>
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="addressline3">Address Line 3</label>
+                                    <label htmlFor="addressline3">Address Line 3</label>
                                     <input type="text" className="form-control input-sm" name="addressline3" id="addressline3" placeholder="Address line..." />
                                 </div>
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="landmark">Landmark</label>
+                                    <label htmlFor="landmark">Landmark</label>
                                     <input type="text" className="form-control input-sm" name="landmark" id="landmark" placeholder="Landmark..." />
                                 </div>
 
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="state">State</label>
+                                    <label htmlFor="state">State</label>
                                     <input type="text" className="form-control input-sm" name="state" id="state" placeholder="State..." />
                                 </div>
 
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="city">City</label>
+                                    <label htmlFor="city">City</label>
                                     <input type="text" className="form-control input-sm" name="city" id="city" placeholder="City..." />
                                 </div>
 
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="pincode">Pin Code</label>
+                                    <label htmlFor="pincode">Pin Code</label>
                                     <input type="text" className="form-control input-sm" name="pincode" id="pincode" placeholder="Pine code..." />
                                 </div>
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="country">Country</label>
+                                    <label htmlFor="country">Country</label>
                                     <input type="text" className="form-control input-sm" name="country" id="country" placeholder="Country..." />
                                 </div>
 
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="phonenumber1">Phone Number 1</label>
+                                    <label htmlFor="phonenumber1">Phone Number 1</label>
                                     <input type="text" className="form-control input-sm" name="phonenumber1" id="phonenumber1" placeholder="Phone number..." />
                                 </div>
                                 <div className="form-group col-md-6 col-sm-6">
-                                    <label for="phonenumber2">Phone Number 2</label>
+                                    <label htmlFor="phonenumber2">Phone Number 2</label>
                                     <input type="text" className="form-control input-sm" name="phonenumber2" id="phonenumber2" placeholder="Phone number..." />
                                 </div>
                             </div>

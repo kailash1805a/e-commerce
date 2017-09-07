@@ -14,8 +14,8 @@ import './assets/css/bootstrap.min.css';
 import './assets/css/custom.min.css';
 import './assets/css/style.css';
 
-import LoginPage from './components/user/LoginPage';
-import HomePage from './components/dashboard/HomePage';
+// import LoginPage from './components/user/LoginPage';
+// import HomePage from './components/dashboard/HomePage';
 
 class Application extends Component {
     render() {

@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 import LoginForm from './container/LoginForm';
 import { bindActionCreators } from 'redux';
 import * as UserActions from '../../actions/UserActions';
-import HomePage from '../dashboard/HomePage'
+// import HomePage from '../dashboard/HomePage'
 
 class LoginPage extends Component {
 
