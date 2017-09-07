@@ -8,7 +8,7 @@ import * as types from '../actions/actionTypes';
  * Author: Kailash kumar
  * reducer for User Page
  * */
-let temp=10;
+let temp = 10;
 export default function userReducer(state = { isLoggedIn: false }, actions) {
     switch (actions.type) {
         case types.USER_LOGIN:
@@ -16,9 +16,12 @@ export default function userReducer(state = { isLoggedIn: false }, actions) {
             console.log('action', actions)
             return Object.assign({}, state, {
                 isLoggedIn: true,
-                temp:temp+=1,
+                temp: temp += 1,
                 ...actions.user
             });
+        case "INVALLID_USER":
+            alert("You are not an authorize user");
+            return state;
         default:
             return state;
     }

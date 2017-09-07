@@ -11,6 +11,11 @@ import UserAPI from '../api/UserApi';
 export function userLogin(user) {
     return { type: types.USER_LOGIN, user };
 }
+export function errorLogin(){
+    return {
+        type:"INVALLID_USER"
+    }
+}
 
 
 /**
@@ -20,8 +25,8 @@ export function authenticate(username, password) {
 
     return function (dispatch) {
         return UserAPI.userAuthentication(username, password).then(response => {
-            console.log("api response", response);
-            dispatch(userLogin(response));
+            console.log("api response", response.ResponseCode);
+            response.ResponseCode===200?dispatch(userLogin(response)):dispatch(errorLogin())
         }).catch(error => {
             throw (error);
         });
