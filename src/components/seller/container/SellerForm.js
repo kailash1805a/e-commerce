@@ -2,13 +2,14 @@
  * Author: Kailash kumar
  */
 
-import React, { PropTypes } from 'react';
-import { Panel, Accordion, Well, Jumbotron, Button, Tabs, Tab, PageHeader } from 'react-bootstrap';
+import React from 'react';
+// import { Panel, Accordion, Well, Jumbotron, Button, Tabs, Tab, PageHeader } from 'react-bootstrap';
+import { Panel, Accordion } from 'react-bootstrap';
 
 /**
  * stateless component for login form
  */
-const SellerForm = ({ }) => {
+const SellerForm = () => {
     return (
         <div id="page-wrapper">
             <h2 className="page-header">Seller Information</h2>

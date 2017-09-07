@@ -1,14 +1,14 @@
 /**
  * Author: Kailash kumar
  */
-import React from 'react';
+import React,{Component} from 'react';
 
-class Sidebar extends React.Component {
+class Sidebar extends Component {
     render() {
 
         return (
             <div className="side-menu">
-                <nav className="navbar navbar-default" role="navigation">
+                <nav className="navbar navbar-default">
                     <div className="side-menu-container">
                         <ul className="nav">
                             <br />
@@ -23,8 +23,8 @@ class Sidebar extends React.Component {
                                 </div>
                             </li>
                             <br />
-                            <li><a href="#"><span className="glyphicon glyphicon-send"></span> Dashbaord</a></li>
-                            <li><a href="#"><span className="glyphicon glyphicon-plane"></span> Seller</a></li>
+                            <li><a><span className="glyphicon glyphicon-send"></span> Dashbaord</a></li>
+                            <li><a><span className="glyphicon glyphicon-plane"></span> Seller</a></li>
                         </ul>
                     </div>
                 </nav>

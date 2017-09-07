@@ -5,6 +5,8 @@
 /*
 * initialStates passed in reducers. It indicates the basic structure of Redux store.
 * */
-export default {
-    user: {}
-};
+// export default {
+//     user: {
+//         isLoggedIn:false
+//     }
+// };

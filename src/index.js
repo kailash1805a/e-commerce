@@ -21,17 +21,20 @@ class Application extends Component {
     render() {
         return (
             <section>
-                <Route component={LoginPage} />
-                <Switch>
+                <Route component={App} />
+                {/* <Switch>
                     <Route path="/" component={App} />
-                    <Route path="dashboard" component={HomePage} />
-                </Switch>
+                    <Route path="/dashboard" component={HomePage} />
+                </Switch> */}
             </section>
         )
     }
 }
 //Configure store
 const store = configureStore();
+store.subscribe(function () {
+    console.log(store.getState())
+})
 
 render(
     <Provider store={store}>

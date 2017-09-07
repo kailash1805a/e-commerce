@@ -2,7 +2,7 @@
  * Author: Kailash kumar
  */
 
-import React, { PropTypes } from 'react';
+import React from 'react';
 
 /**
  * stateless component for login form
@@ -22,9 +22,9 @@ const LoginForm = ({ formDetails, formSubmit }) => {
     )
 }
 
-LoginForm.PropTypes = {
-    fromSubmit: React.PropTypes.func.isRequired,
-    formDetails: React.PropTypes.func.isRequired
-}
+// LoginForm.PropTypes = {
+//     fromSubmit: React.PropTypes.func.isRequired,
+//     formDetails: React.PropTypes.func.isRequired
+// }
 
 export default LoginForm;

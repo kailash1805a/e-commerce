@@ -1,20 +1,24 @@
 /**
  * Author : Kailash kumar
  */
-import React from 'react';
+// import React from 'react';
 import * as types from '../actions/actionTypes';
-import initialState from './initialState';
+// import initialState from './initialState';
 /**
  * Author: Kailash kumar
  * reducer for User Page
  * */
-export default function userReducer(state = initialState.user, actions) {
+let temp=10;
+export default function userReducer(state = { isLoggedIn: false }, actions) {
     switch (actions.type) {
-       
         case types.USER_LOGIN:
-        debugger;
-         return actions.user;
-
+            console.log('state', state)
+            console.log('action', actions)
+            return Object.assign({}, state, {
+                isLoggedIn: true,
+                temp:temp+=1,
+                ...actions.user
+            });
         default:
             return state;
     }

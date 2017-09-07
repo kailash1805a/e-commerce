@@ -20,10 +20,10 @@ export function authenticate(username, password) {
 
     return function (dispatch) {
         return UserAPI.userAuthentication(username, password).then(response => {
-            console.log("api response" +response);
+            console.log("api response", response);
             dispatch(userLogin(response));
         }).catch(error => {
-            throw(error);
+            throw (error);
         });
     };
 }

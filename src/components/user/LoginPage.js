@@ -2,14 +2,15 @@
  * Main company application module handle all templates
  * Author: Kailash kumar
  */
-import React, { PropTypes } from 'react';
+import React, { Component } from 'react';
 // import Header from './common/Header';
 import { connect } from 'react-redux';
 import LoginForm from './container/LoginForm';
 import { bindActionCreators } from 'redux';
 import * as UserActions from '../../actions/UserActions';
+import HomePage from '../dashboard/HomePage'
 
-class LoginPage extends React.Component {
+class LoginPage extends Component {
 
     constructor(props) {
         super(props);
@@ -40,17 +41,17 @@ class LoginPage extends React.Component {
     loginFormSubmit(event) {
         console.log(this.state);
         this.props.actions.authenticate(this.state.username, this.state.password);
-        
+
     }
-    componentWillMount(){
-        const userDetails = this.props.user;
-        if(userDetails != undefined && userDetails.ResponseCode == 200) {
-            this.props.history.push("/dashboard");
-            alert("login successfully!");
-        }
+    componentWillMount() {
+        // const userDetails = this.props.user;
+        // if(userDetails !== undefined && userDetails.ResponseCode === 200) {
+        //     this.props.history.push("/dashboard");
+        //     alert("login successfully!");
+        // }
     }
 
-    render() {      
+    render() {
 
         return (
             <div className="container">
@@ -67,15 +68,16 @@ class LoginPage extends React.Component {
     }
 }
 
-LoginPage.propTypes = {
-    user: PropTypes.object.isRequired,
-    actions: PropTypes.array
-};
+// LoginPage.propTypes = {
+//     user: PropTypes.object.isRequired,
+//     actions: PropTypes.array
+// };
 
 //to subscribe to store updates
 function mapStateToProps(state, ownProps) {
     return {
-        user: state.userReducer
+        isUserLoggedIn: state.userReducer,
+
     };
 }
 //to bind action creators

@@ -12,11 +12,11 @@ class UserApi {
     static userAuthentication(username, password) {
         debugger;
         console.log("username" + username + "password" + password);
-        const user = {
-            UserId: username,
-            Password: password
-        }
-        return fetch(`${BASE_API_URL}` + 'login', {
+        // const user = {
+        //     UserId: username,
+        //     Password: password
+        // }
+        return fetch(`${BASE_API_URL}`+'login', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
